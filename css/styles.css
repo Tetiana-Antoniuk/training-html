@@ -1,0 +1,153 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: rgba(46, 47, 66, 0.4);
+  --hero-background: rgba(46, 47, 66, 1);
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--white-background);
+  color: var(--text);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+
+.logo {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  color: var(--dark);
+}
+.logo-accent {
+  color: var(--primary-brand);
+}
+.contacts a {
+  font-weight: 500;
+  color: var(--dark);
+}
+.adress-info a {
+  font-style: normal;
+  color: var(--text);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--pressed-state);
+}
+.adress-info a:hover,
+.adress-info a:focus {
+  color: var(--pressed-state);
+}
+/*main*/
+
+.heading {
+  background-color: var(--dark);
+}
+.promo-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  color: var(--white-background);
+}
+.primary-button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  border: none;
+}
+.benefits-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--dark);
+}
+.work-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  color: var(--dark);
+}
+.team {
+  background-color: var(--light);
+}
+.team-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  color: var(--dark);
+}
+.team-card {
+  background-color: var(--white-background);
+}
+.team-member {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--dark);
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--dark);
+}
+.footer-logo {
+  color: var(--light);
+}
+.footer-text {
+  color: var(--light);
+}
+
+/*portfolio*/
+
+.portfolio-button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  border: none;
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
+}
+.portfolio-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--dark);
+}
