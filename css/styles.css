@@ -39,6 +39,7 @@ button {
   line-height: 1.16;
   letter-spacing: 0.54px;
   color: var(--dark);
+  text-transform: uppercase;
 }
 .logo-accent {
   color: var(--primary-brand);
