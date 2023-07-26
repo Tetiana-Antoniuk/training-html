@@ -26,6 +26,9 @@ li {
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 
 /* nav */
 
@@ -40,20 +43,20 @@ a {
 .logo-accent {
   color: var(--primary-brand);
 }
-.contacts a {
+.menu a {
   font-weight: 500;
   color: var(--dark);
 }
-.adress-info a {
+.contacts a {
   font-style: normal;
   color: var(--text);
 }
-.contacts a:hover,
-.contacts a:focus {
+.menu a:hover,
+.menu a:focus {
   color: var(--pressed-state);
 }
-.adress-info a:hover,
-.adress-info a:focus {
+.contacts a:hover,
+.contacts a:focus {
   color: var(--pressed-state);
 }
 /*main*/
@@ -115,7 +118,7 @@ a {
 
 /*footer*/
 
-.footer {
+.page-footer {
   background-color: var(--dark);
 }
 .footer-logo {
