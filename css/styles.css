@@ -62,7 +62,7 @@ button {
 }
 /*main*/
 
-.heading {
+.hero {
   background-color: var(--dark);
 }
 .promo-title {
@@ -72,7 +72,7 @@ button {
   letter-spacing: 1.12px;
   color: var(--white-background);
 }
-.primary-button {
+.button-primary {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
