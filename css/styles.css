@@ -166,3 +166,6 @@ button {
   letter-spacing: 0.4px;
   color: var(--dark);
 }
+.examples-text {
+  color: var(--text);
+}
