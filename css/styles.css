@@ -20,10 +20,10 @@ body {
   background-color: var(--white-background);
   color: var(--text);
 }
-li {
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
 }
 button {
@@ -33,31 +33,31 @@ button {
 /* nav */
 
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
-  color: var(--dark);
+  color: var(--primary-brand);
   text-transform: uppercase;
 }
 .logo-accent {
-  color: var(--primary-brand);
+  color: var(--dark);
 }
-.menu a {
+.menu-link {
   font-weight: 500;
   color: var(--dark);
 }
-.contacts a {
+.contacts-link {
   font-style: normal;
   color: var(--text);
 }
-.menu a:hover,
-.menu a:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--pressed-state);
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--pressed-state);
 }
 /*main*/
@@ -71,6 +71,7 @@ button {
   line-height: 1.07;
   letter-spacing: 1.12px;
   color: var(--white-background);
+  text-align: center;
 }
 .button-primary {
   font-family: Roboto, sans-serif;
@@ -81,6 +82,10 @@ button {
   color: var(--white-background);
   background-color: var(--primary-brand);
   border: none;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background-color: var(--pressed-state);
 }
 .benefits-subtitle {
   font-size: 20px;
@@ -95,6 +100,8 @@ button {
   line-height: 1.11;
   letter-spacing: 0.72px;
   color: var(--dark);
+  text-align: center;
+  text-transform: capitalize;
 }
 .team {
   background-color: var(--light);
@@ -105,6 +112,8 @@ button {
   line-height: 1.11;
   letter-spacing: 0.72px;
   color: var(--dark);
+  text-align: center;
+  text-transform: capitalize;
 }
 .team-card {
   background-color: var(--white-background);
@@ -132,7 +141,7 @@ button {
 /*portfolio*/
 
 .portfolio-button {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -140,8 +149,8 @@ button {
   color: var(--primary-brand);
   background-color: var(--light);
   border: none;
-  border-radius: 4px;
   border: 1px solid var(--accent);
+  cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
