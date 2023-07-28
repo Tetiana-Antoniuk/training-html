@@ -48,8 +48,10 @@ button {
   font-weight: 500;
   color: var(--dark);
 }
-.contacts-link {
+.contacts {
   font-style: normal;
+}
+.contacts-link {
   color: var(--text);
 }
 .menu-link:hover,
