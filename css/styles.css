@@ -20,6 +20,22 @@ body {
   background-color: var(--white-background);
   color: var(--text);
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+li {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -29,9 +45,31 @@ body {
 button {
   cursor: pointer;
 }
-
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 1px solid tomato;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* nav */
 
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -40,9 +78,14 @@ button {
   letter-spacing: 0.54px;
   color: var(--primary-brand);
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-accent {
   color: var(--dark);
+}
+.menu {
+  display: flex;
+  gap: 40px;
 }
 .menu-link {
   font-weight: 500;
@@ -50,6 +93,11 @@ button {
 }
 .contacts {
   font-style: normal;
+  display: flex;
+}
+.contacts-info {
+  display: flex;
+  gap: 40px;
 }
 .contacts-link {
   color: var(--text);
@@ -62,10 +110,13 @@ button {
 .contacts-link:focus {
   color: var(--pressed-state);
 }
+
 /*main*/
 
 .hero {
   background-color: var(--dark);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .promo-title {
   font-size: 56px;
@@ -74,6 +125,11 @@ button {
   letter-spacing: 1.12px;
   color: var(--white-background);
   text-align: center;
+  margin-bottom: 48px;
+}
+.hero-button {
+  display: flex;
+  justify-content: center;
 }
 .button-primary {
   font-family: Roboto, sans-serif;
@@ -84,10 +140,18 @@ button {
   color: var(--white-background);
   background-color: var(--primary-brand);
   border: none;
+  padding: 16px 32px;
 }
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--pressed-state);
+}
+.benefits {
+  padding-top: 120px;
+}
+.benefits-info {
+  display: flex;
+  gap: 24px;
 }
 .benefits-subtitle {
   font-size: 20px;
@@ -95,6 +159,10 @@ button {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: var(--dark);
+  margin-bottom: 8px;
+}
+.work {
+  padding-bottom: 120px;
 }
 .work-subtitle {
   font-size: 36px;
@@ -105,8 +173,14 @@ button {
   text-align: center;
   text-transform: capitalize;
 }
+.work-list {
+  display: flex;
+  gap: 24px;
+}
 .team {
   background-color: var(--light);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-subtitle {
   font-size: 36px;
@@ -116,9 +190,23 @@ button {
   color: var(--dark);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-card {
   background-color: var(--white-background);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 .team-member {
   font-size: 20px;
@@ -126,12 +214,22 @@ button {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 
 /*footer*/
 
 .page-footer {
   background-color: var(--dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-wrapper {
+  width: 264px;
+}
+.footer-link {
+  display: block;
+  margin-bottom: 16px;
 }
 .footer-logo {
   color: var(--light);
@@ -142,6 +240,17 @@ button {
 
 /*portfolio*/
 
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .portfolio-button {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -153,6 +262,7 @@ button {
   border: none;
   border: 1px solid var(--accent);
   cursor: pointer;
+  padding: 12px 24px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -166,6 +276,22 @@ button {
   letter-spacing: 0.4px;
   color: var(--dark);
 }
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.examples-list {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.portfolio-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .examples-text {
   color: var(--text);
+}
+.portfolio-subtitle {
+  margin-bottom: 8px;
 }
