@@ -53,6 +53,9 @@ button {
   padding-right: 15px;
   padding-left: 15px;
 }
+.visually-hidden {
+  visibility: hidden;
+}
 
 /* nav */
 
@@ -68,6 +71,7 @@ button {
 }
 .navigation {
   display: flex;
+  align-items: center;
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -153,9 +157,6 @@ button {
 .benefits {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.benefits-title {
-  visibility: hidden;
 }
 .benefits-info {
   display: flex;
@@ -259,9 +260,6 @@ button {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-}
-.portfolio-title {
-  visibility: hidden;
 }
 .portfolio-buttons {
   display: flex;
