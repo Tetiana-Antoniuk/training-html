@@ -98,6 +98,8 @@ button {
 .menu {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-link {
   font-weight: 500;
