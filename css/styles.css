@@ -98,12 +98,13 @@ button {
 .menu {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .menu-link {
+  display: inline-block;
   font-weight: 500;
   color: var(--dark);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .contacts {
   font-style: normal;
