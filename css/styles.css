@@ -35,6 +35,7 @@ li {
 }
 img {
   display: block;
+  width: 100%;
 }
 .list {
   list-style: none;
@@ -51,7 +52,6 @@ button {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  border: 1px solid tomato;
 }
 .section {
   padding-top: 60px;
@@ -283,7 +283,8 @@ button {
   row-gap: 48px;
 }
 .examples-list {
-  flex-basis: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 54px) / 3);
+  border: 1px solid var(--cornflower, #e7e9fc);
 }
 .portfolio-info {
   padding-top: 32px;
