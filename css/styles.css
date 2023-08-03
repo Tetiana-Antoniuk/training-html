@@ -70,13 +70,13 @@ button {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .page-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .navigation {
   display: flex;
