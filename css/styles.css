@@ -53,19 +53,18 @@ button {
   padding-right: 15px;
   padding-left: 15px;
 }
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 /* nav */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 .page-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navigation {
   display: flex;
@@ -93,11 +92,11 @@ button {
 }
 .contacts {
   font-style: normal;
-  display: flex;
 }
 .contacts-info {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 .contacts-link {
   color: var(--text);
@@ -125,13 +124,12 @@ button {
   letter-spacing: 1.12px;
   color: var(--white-background);
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 48px;
+  max-width: 496px;
 }
-.hero-button {
-  display: flex;
-  justify-content: center;
-}
-.button-primary {
+.hero-button-primary {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -141,6 +139,12 @@ button {
   background-color: var(--primary-brand);
   border: none;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -148,10 +152,17 @@ button {
 }
 .benefits {
   padding-top: 120px;
+  padding-bottom: 120px;
+}
+.benefits-title {
+  visibility: hidden;
 }
 .benefits-info {
   display: flex;
   gap: 24px;
+}
+.benefits-item {
+  width: calc((100% - 72px) / 4);
 }
 .benefits-subtitle {
   font-size: 20px;
@@ -172,10 +183,14 @@ button {
   color: var(--dark);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .work-list {
   display: flex;
   gap: 24px;
+}
+.work-image {
+  width: calc((100% - 48px) / 3);
 }
 .team {
   background-color: var(--light);
@@ -202,6 +217,7 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
 }
 .team-info {
   padding-top: 32px;
@@ -225,10 +241,10 @@ button {
   padding-bottom: 100px;
 }
 .footer-wrapper {
-  width: 264px;
+  max-width: 264px;
 }
-.footer-link {
-  display: block;
+.footer-link-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo {
@@ -243,6 +259,9 @@ button {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.portfolio-title {
+  visibility: hidden;
 }
 .portfolio-buttons {
   display: flex;
@@ -263,11 +282,13 @@ button {
   border: 1px solid var(--accent);
   cursor: pointer;
   padding: 12px 24px;
+  border-radius: 4px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--white-background);
   background-color: var(--pressed-state);
+  border: 1px solid transparent;
 }
 .portfolio-subtitle {
   font-size: 20px;
