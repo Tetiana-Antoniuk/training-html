@@ -380,8 +380,7 @@ button {
   position: absolute;
   width: 408px;
   min-height: 584px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: var(--modal-background);
   top: 50%;
   left: 50%;
@@ -433,7 +432,6 @@ button {
   letter-spacing: 0.32px;
   color: var(--dark);
   text-align: center;
-  margin-top: 72px;
   margin-bottom: 34px;
 }
 .modal-form-field {
