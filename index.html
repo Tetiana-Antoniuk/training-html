@@ -15,6 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
     <title>WEBSTUDIO</title>
   </head>
@@ -37,6 +38,16 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="mobile-menu-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-button-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu_hamburger"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="contacts-info list">
             <li class="contacts-list">
@@ -446,7 +457,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
           <svg
@@ -538,7 +549,96 @@
           <button class="modal-form-button" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-button js-close-menu" type="button">
+          <svg class="mobile-menu-close-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-wrapper">
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link link mobile-current"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-contacts-wrapper">
+            <address class="mobile-menu-contacts">
+              <ul class="moble-menu-contacts-info list">
+                <li class="mobile-menu-contacts-list-number">
+                  <a
+                    class="mobile-menu-contacts-link-number link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts-list">
+                  <a
+                    class="mobile-menu-contacts-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-menu-networks">
+              <ul class="mobile-menu-networks-wrapper">
+                <li class="mobile-menu-networks-icons list">
+                  <a href="#" class="mobile-menu-networks-icon-link link">
+                    <svg class="mobile-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-networks-icons list">
+                  <a href="#" class="mobile-menu-networks-icon-link link">
+                    <svg class="mobile-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-networks-icons list">
+                  <a href="#" class="mobile-menu-networks-icon-link link">
+                    <svg class="mobile-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-networks-icons list">
+                  <a href="#" class="mobile-menu-networks-icon-link link">
+                    <svg class="mobile-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="./modal.js"></script> -->
   </body>
 </html>

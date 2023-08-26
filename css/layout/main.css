@@ -1,0 +1,615 @@
+@media screen and (max-width: 767px) {
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../../images/hero-image.jpg');
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .promo-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--white-background);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+  .hero-button-primary {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    color: var(--white-background);
+    background-color: var(--primary-brand);
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button-primary:hover,
+  .hero-button-primary:focus {
+    background-color: var(--pressed-state);
+  }
+  .benefits {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .benefits-info {
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+  }
+  .benefits-item {
+    width: 100%;
+  }
+  .benefits-item-icon {
+    display: none;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .work {
+    display: none;
+  }
+
+  .team {
+    background-color: var(--light);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .team-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--dark);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+  }
+  .team-list-item {
+    background-color: var(--white-background);
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .team-info {
+    padding: 32px 0;
+    text-align: center;
+  }
+  .team-member {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .team-text {
+    margin-bottom: 8px;
+  }
+  .team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .team-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .team-icon {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand);
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-icon:hover,
+  .team-icon:focus,
+  .team-icon:active {
+    background-color: var(--pressed-state);
+  }
+  .team-network-icon {
+    fill: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .customers-subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    margin-bottom: 72px;
+    color: var(--dark);
+  }
+  .customers-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .customers-icon {
+    height: 88px;
+    width: calc((100% - 16px) / 2);
+  }
+  .customers-icon-link {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--subtle-text);
+  }
+  .customers-icon-logo {
+    fill: currentColor;
+  }
+  .customers-icon-link:hover,
+  .customers-icon-link:focus {
+    border: 1px solid var(--pressed-state);
+    color: var(--pressed-state);
+  }
+  .customers-icon-link:hover .customers-icon-logo,
+  .customers-icon-link:focus .customers-icon-logo {
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../../images/hero-image.jpg');
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .promo-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--white-background);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+  .hero-button-primary {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    color: var(--white-background);
+    background-color: var(--primary-brand);
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button-primary:hover,
+  .hero-button-primary:focus {
+    background-color: var(--pressed-state);
+  }
+  .benefits {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .benefits-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .benefits-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .benefits-item-icon {
+    display: none;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .work {
+    display: none;
+  }
+  .team {
+    background-color: var(--light);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .team-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--dark);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .team-list-item {
+    background-color: var(--white-background);
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .team-info {
+    padding: 32px 0;
+    text-align: center;
+  }
+  .team-member {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .team-text {
+    margin-bottom: 8px;
+  }
+  .team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .team-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .team-icon {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand);
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-icon:hover,
+  .team-icon:focus {
+    background-color: var(--pressed-state);
+  }
+  .team-network-icon {
+    fill: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .customers-subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    margin-bottom: 72px;
+    color: var(--dark);
+  }
+  .customers-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .customers-icon {
+    height: 88px;
+    display: flex;
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-icon-link {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--subtle-text);
+  }
+  .customers-icon-logo {
+    fill: currentColor;
+  }
+  .customers-icon-link:hover,
+  .customers-icon-link:focus {
+    border: 1px solid var(--pressed-state);
+    color: var(--pressed-state);
+  }
+  .customers-icon-link:hover .customers-icon-logo,
+  .customers-icon-link:focus .customers-icon-logo {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../../images/hero-image.jpg');
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .promo-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--white-background);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+  .hero-button-primary {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    color: var(--white-background);
+    background-color: var(--primary-brand);
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button-primary:hover,
+  .hero-button-primary:focus {
+    background-color: var(--pressed-state);
+  }
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .benefits-info {
+    display: flex;
+    gap: 24px;
+  }
+  .benefits-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .benefits-item-icon {
+    display: flex;
+    height: 112px;
+    background-color: var(--light);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .work {
+    padding-bottom: 120px;
+  }
+  .work-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--dark);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .work-list {
+    display: flex;
+    gap: 24px;
+  }
+  .work-image {
+    width: calc((100% - 48px) / 3);
+  }
+  .team {
+    background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--dark);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-list-item {
+    background-color: var(--white-background);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .team-info {
+    padding: 32px 0;
+    text-align: center;
+  }
+  .team-member {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .team-text {
+    margin-bottom: 8px;
+  }
+  .team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .team-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .team-icon {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand);
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-icon:hover,
+  .team-icon:focus {
+    background-color: var(--pressed-state);
+  }
+  .team-network-icon {
+    fill: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    margin-bottom: 72px;
+    color: var(--dark);
+  }
+  .customers-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .customers-icon {
+    height: 88px;
+    display: flex;
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-icon-link {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--subtle-text);
+  }
+  .customers-icon-logo {
+    fill: currentColor;
+  }
+  .customers-icon-link:hover,
+  .customers-icon-link:focus {
+    border: 1px solid var(--pressed-state);
+    color: var(--pressed-state);
+  }
+  .customers-icon-link:hover .customers-icon-logo,
+  .customers-icon-link:focus .customers-icon-logo {
+    fill: currentColor;
+  }
+}
