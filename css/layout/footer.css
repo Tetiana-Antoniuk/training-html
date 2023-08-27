@@ -45,7 +45,7 @@
   }
   .footer-icon-link:hover,
   .footer-icon-link:focus,
-  .footer-icon-link:focus {
+  .footer-icon-link:active {
     background-color: var(--success);
   }
   .footer-icon {
@@ -115,12 +115,11 @@
   }
   .page-footer-wrapper {
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: center;
   }
   .page-footer-logo {
-    margin-right: 120px;
+    margin-right: 24px;
   }
   .footer-link-logo {
     display: inline-block;
@@ -172,6 +171,10 @@
   .form-footer {
     display: flex;
     gap: 24px;
+  }
+  .form-footer-container {
+    width: 495px;
+    margin-top: 72px;
   }
   .form-footer-input {
     margin: 0;
