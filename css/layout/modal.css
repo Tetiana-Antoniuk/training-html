@@ -20,7 +20,8 @@
   /*modal*/
   .modal {
     position: absolute;
-    width: 392px;
+    max-width: 392px;
+    width: 100%;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
     background-color: var(--modal-background);
